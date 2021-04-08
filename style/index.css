@@ -160,8 +160,38 @@ header nav {
 .descriptionRight {
   padding: 4%;
   line-height: 2;
-
+  font-family: "Kiwi Maru", serif;
   bottom: 20%;
   display: flex;
   flex-direction: column;
+}
+
+.descriptionRight h2 {
+  font-size: 5.5rem;
+}
+
+.projectsRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.projectColumn {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+  /* justify-content: center; */
+  width: 31%;
+}
+
+.projectColumn p {
+  /* width: 13%; */
+  text-align: center;
+}
+
+.projectColumn img {
+  width: 90%;
+  margin: 0 auto;
 }
