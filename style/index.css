@@ -101,7 +101,7 @@ q {
 * {
   box-sizing: border-box;
   max-width: width 100%;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 /* General Styles*/
@@ -170,6 +170,17 @@ header nav {
   font-size: 5.5rem;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
 .projectsRow {
   display: flex;
   justify-content: space-between;
@@ -197,19 +208,45 @@ header nav {
   margin: 0 auto;
 }
 
-.footer {
+footer {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   height: 20vh;
   background-color: #6a666b;
 }
 
-.footerLeft {
+.Left {
+  display: flex;
   flex-direction: column;
-  margin: 2%;
-  padding: 2%;
 }
 
-.footerRight {
+.Right {
+  display: flex;
+  flex-direction: row;
+}
+
+.Left p {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.Left p a {
+  color: #fff;
+}
+
+.fa-instagram {
+  font-size: 3.5rem;
+  margin: 2%;
+  color: #fff;
+}
+
+.fa-github {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.Right h3 {
+  color: #fff;
   justify-content: flex-end;
+  font-size: 3rem;
 }
