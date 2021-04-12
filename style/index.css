@@ -250,3 +250,51 @@ footer {
   justify-content: flex-end;
   font-size: 3rem;
 }
+
+/*Responsive CSS*/
+
+@media (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+  .headerLinks {
+    justify-content: center;
+  }
+  .mainInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left img {
+    border-radius: 50%;
+  }
+
+  div.descriptionRight {
+    width: 80%;
+  }
+
+  .projectColumn {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .left img {
+    width: 80%;
+  }
+
+  .descriptionRight h2 {
+    line-height: initial;
+  }
+
+  .left p {
+    margin-bottom: 2%;
+  }
+}
